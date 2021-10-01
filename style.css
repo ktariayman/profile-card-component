@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+    --primary-font: "Kumbh Sans", sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: var(--primary-font);
+    line-height: 1.6;
+    background-color: var(--dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+
+.bg-pattern-top{
+    position: absolute;
+    top: -400px;
+    left: -63px;
+    z-index: -10;
+}
+.bg-pattern-bottom{
+    position: absolute;
+    bottom: -400px;
+    right: -63px;
+    z-index: -10;
+} 
+.card {
+    margin: 0 auto;
+    width: 350px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center; */
+}
+
+.top-img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card__content {
+    position: relative;
+    top: -58px;
+}
+
+.profile-img {
+    width: 100px;
+    border-radius: 50px;
+    border: 5px solid white;
+}
+
+.profile-user {
+    position: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+}
+
+.user-name {
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.user-age {
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+}
+
+.user-city {
+    font-size: 0.8em;
+    margin-top: -10px;
+}
+
+hr {
+    border: 1px solid hsla(0, 0%, 59%, 0.2);
+    margin: 30px 0;
+}
+
+.profile__stats {
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.profile__stats > div > span {
+    display: block;
+}
+
+.profile__stats--value {
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.profile-stats--description {
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+    /* text-transform: uppercase; */
+    font-size: 0.6em;
+    letter-spacing: 1px;
+}
+
+
+.attribution { font-size: 11px; text-align: center; margin-top: 30px; }
+.attribution a { color: hsl(228, 45%, 44%); }
